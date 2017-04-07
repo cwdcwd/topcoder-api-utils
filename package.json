@@ -1,5 +1,5 @@
 {
-  "name": "@lazybaer/topcoder-api-utils",
+  "name": "topcoder-api-utils",
   "version": "1.0.0",
   "description": "utilities for dealing w/ the topcoder APIs",
   "main": "index.js",
@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/cwdcwd/topcoder-api-utils#readme",
   "dependencies": {
-    "@lazybaer/topcoder-api-challenges": "^1.0.1",
-    "@lazybaer/topcoder-api-projects": "^1.0.0",
+    "topcoder-api-challenges": "^1.0.1",
+    "topcoder-api-projects": "^1.0.0",
     "chai": "^3.5.0",
     "config": "^1.25.1",
     "jwt-decode": "^2.2.0",

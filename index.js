@@ -3,8 +3,8 @@ const _=require('lodash');
 const config=require('config');
 const logger = config.logger;
 const jwtDecode = require('jwt-decode');
-const tc_api_projects=require('@lazybaer/topcoder-api-projects');
-const tc_api_challenges=require('@lazybaer/topcoder-api-challenges');
+const tc_api_projects=require('topcoder-api-projects');
+const tc_api_challenges=require('topcoder-api-challenges');
 
 const TCAuth = require('./TCAuth');
 
