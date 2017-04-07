@@ -56,7 +56,7 @@ tca.login(config.TC.USERNAME,config.TC.PASSWORD, function(err, accessToken) {
                   let body = new tc_api_challenges.AddResourceBody(ROLE_MANAGER, uid);
                   challengesAPIInstance.challengesIdResourcesPost(oChallenge.id, body, (err, data, resp) => { //CWD-- add manager role for user
                     if(err){
-                      let errmsg=_.get(resp.body,'result.content','');
+                      let errmsg=_.get(resp,'body.result.content','');
                       logger.error(`failed to updated manager for ${oChallenge.id}. ${errmsg}`);
                     } else {
                       logger.info(`updated manager for ${oChallenge.id}`);
