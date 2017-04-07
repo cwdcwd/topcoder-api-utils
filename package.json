@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/cwdcwd/topcoder-api-utils#readme",
   "dependencies": {
+    "@lazybaer/topcoder-api-challenges": "^1.0.0",
     "@lazybaer/topcoder-api-projects": "^1.0.0",
     "chai": "^3.5.0",
     "config": "^1.25.1",
+    "jwt-decode": "^2.2.0",
     "lodash": "^4.17.4",
     "mocha": "^3.2.0",
     "request": "^2.81.0",
