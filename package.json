@@ -1,0 +1,38 @@
+{
+  "name": "@lazybaer/topcoder-api-utils",
+  "version": "1.0.0",
+  "description": "utilities for dealing w/ the topcoder APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "nyc mocha --timeout=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cwdcwd/topcoder-api-utils.git"
+  },
+  "author": "lazybaer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwdcwd/topcoder-api-utils/issues"
+  },
+  "homepage": "https://github.com/cwdcwd/topcoder-api-utils#readme",
+  "dependencies": {
+    "@lazybaer/topcoder-api-projects": "^1.0.0",
+    "chai": "^3.5.0",
+    "config": "^1.25.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "supertest": "^3.0.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint-config-topcoder": "^2.0.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^6.10.3",
+    "nyc": "^10.2.0"
+  }
+}
