@@ -46,8 +46,6 @@ TCAuth.prototype.login = function login(username, password, cb) {
         self.logger.error('error while requesting login: ', err);
         cb(err);
     });
-
-
 };
 
 TCAuth.prototype.fetchV3Token = function fetchV3Token(v2Token, cb) {
@@ -85,7 +83,6 @@ TCAuth.prototype.fetchV3Token = function fetchV3Token(v2Token, cb) {
         self.logger.error('An error occured while requesting a v3 token: %j', err);
         cb(err);
     });
-
 };
 
 
