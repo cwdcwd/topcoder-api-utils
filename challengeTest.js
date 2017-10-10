@@ -12,7 +12,13 @@ const TCAuth = require('./TCAuth');
 
 let tca = new TCAuth(config.TC, logger);
 
-tca.login(config.TC.USERNAME,config.TC.PASSWORD, function(err, accessToken) {
+tca.login(config.TC.USERNAME,config.TC.PASSWORD, function(loginError, accessToken) {
+  if(loginError) {
+    //console.error(util.inspect(loginError, {showHidden: false, depth: null}));
+    console.log(_.get(loginError,'error_description', loginError));
+    return loginError;
+  }
+
   console.log(`received accessToken: ${accessToken}`);
   let projectsClient = tc_api_projects.ApiClient.instance;
   let challengesClient=tc_api_challenges.ApiClient.instance;
@@ -83,5 +89,6 @@ console.error(util.inspect(challengePayload, {showHidden: false, depth: null}));
   };
 
   console.log('calling out to projects API');
+  console.log(projectsAPIInstance);
   projectsAPIInstance.directProjectsPost(projectBody, projectCB);
 });

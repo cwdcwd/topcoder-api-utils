@@ -25,7 +25,7 @@ TCAuth.prototype.login = function login(username, password, cb) {
         grant_type: 'password',
         device: 'Browser'
     }
-
+console.log(self.config);
     self.logger.debug('token request: %j', v2TokenBody);
 
     let reqOpts = {
